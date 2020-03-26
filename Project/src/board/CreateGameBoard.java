@@ -15,9 +15,9 @@ import static squares.square.Type.CHANCE;
 
 public class CreateGameBoard {
 
-    public static void AddSquare(Square square, Map<Square, Player> squaresBoughtByPlayer, ArrayList<Square>allGameSquares) throws Exception{
+    public static void AddSquare(Square square, Map<Square, Player> playerSquares, ArrayList<Square>allGameSquares) throws Exception{
         allGameSquares.add(square);
-        squaresBoughtByPlayer.put(square, null);
+        playerSquares.put(square, null);
     }
 
     public static int randomMoney() {
